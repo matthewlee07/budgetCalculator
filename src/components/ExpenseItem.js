@@ -1,7 +1,7 @@
 import React from "react";
 
 const ExpenseItem = ({ expense }) => {
-  const { id, charge, amount } = expense;
+  const { charge, amount } = expense;
   return (
     <li className="item">
       <div className="info">
