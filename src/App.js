@@ -3,9 +3,15 @@ import "./App.css";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseForm from "./components/ExpenseForm";
 
-const initialExpenses = localStorage.getItem("expenses")
-  ? JSON.parse(localStorage.getItem("expenses"))
-  : [];
+// const initialExpenses = localStorage.getItem("expenses")
+//   ? JSON.parse(localStorage.getItem("expenses"))
+//   : [];
+
+const initialExpenses = [
+  { charge: "rent", amount: 1600 },
+  { charge: "car payment", amount: 400 },
+  { charge: "credit card bill", amount: 1200 }
+];
 
 function App() {
   const [expenses, setExpenses] = useState(initialExpenses);
