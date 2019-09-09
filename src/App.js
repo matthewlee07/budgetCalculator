@@ -43,10 +43,6 @@ function App() {
   const clearItems = () => {
     setExpenses([]);
   };
-  const handleDelete = id => {
-    let tempExpenses = expenses.filter(item => item.id !== id);
-    setExpenses(tempExpenses);
-  };
 
   return (
     <>
@@ -59,11 +55,7 @@ function App() {
           amount={amount}
           handleSubmit={handleSubmit}
         />
-        <ExpenseList
-          expenses={expenses}
-          handleDelete={handleDelete}
-          clearItems={clearItems}
-        />
+        <ExpenseList expenses={expenses} clearItems={clearItems} />
       </main>
       <h1>
         Total Spending:
