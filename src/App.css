@@ -124,10 +124,6 @@ label {
   border-radius: 2px;
   padding: 1px 3px;
 }
-.clear-btn,
-.clear-btn {
-  color: var(--mainRed);
-}
 
 .total {
   font-weight: 300;

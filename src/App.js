@@ -40,10 +40,6 @@ function App() {
     setAmount("");
   };
 
-  const clearItems = () => {
-    setExpenses([]);
-  };
-
   return (
     <>
       <h1>Budget Calculator</h1>
@@ -55,7 +51,7 @@ function App() {
           amount={amount}
           handleSubmit={handleSubmit}
         />
-        <ExpenseList expenses={expenses} clearItems={clearItems} />
+        <ExpenseList expenses={expenses} />
       </main>
       <h1>
         Total Spending:
